@@ -1,0 +1,114 @@
+===== FILE ALLOCATION TECHNIQUES =====
+
+Enter Disk Block Size (in bytes): 1024 
+
+Enter number of files: 3
+
+Enter File Name and File Size in bytes (Block size = 1024 bytes):
+File 1 [Name SizeInBytes]: file1.txt 2048
+File 2 [Name SizeInBytes]: file2.txt 3072
+File 3 [Name SizeInBytes]: file3.txt 4096
+
+===== MENU =====
+1. Contiguous Allocation
+2. Linked Allocation
+3. Single Indexed Allocation
+4. Display Free Block List
+5. Reset Free Blocks
+6. Exit
+Enter your choice: 1
+
+--- CONTIGUOUS ALLOCATION ---
+Block Size: 1024 bytes
+
+File	Size(Bytes)	Blocks	Start	End	Status		Allocated Blocks
+file1.txt	2048		2	0	1	Allocated	0 1 
+file2.txt	3072		3	2	4	Allocated	2 3 4 
+file3.txt	4096		4	5	8	Allocated	5 6 7 8 
+
+===== MENU =====
+1. Contiguous Allocation
+2. Linked Allocation
+3. Single Indexed Allocation
+4. Display Free Block List
+5. Reset Free Blocks
+6. Exit
+Enter your choice: 2
+
+--- LINKED ALLOCATION ---
+Block Size: 1024 bytes
+
+File	Size(Bytes)	Blocks	Linked Blocks
+file1.txt	2048		2	11 -> 1 -> END
+file2.txt	3072		3	25 -> 30 -> 0 -> END
+file3.txt	4096		4	43 -> 31 -> 18 -> 7 -> END
+
+===== MENU =====
+1. Contiguous Allocation
+2. Linked Allocation
+3. Single Indexed Allocation
+4. Display Free Block List
+5. Reset Free Blocks
+6. Exit
+Enter your choice: 3
+
+--- SINGLE INDEXED ALLOCATION ---
+Block Size: 1024 bytes
+Pointers per index block: 4
+
+Each file uses one index block that points to its data blocks.
+Maximum data blocks per file: 4
+
+File: file1.txt | Size: 2048 bytes | Data Blocks Needed: 2
+  Index Block: 39
+  Data Blocks: 8 21 
+  Status: FULLY ALLOCATED
+
+File: file2.txt | Size: 3072 bytes | Data Blocks Needed: 3
+  Index Block: 29
+  Data Blocks: 30 28 44 
+  Status: FULLY ALLOCATED
+
+File: file3.txt | Size: 4096 bytes | Data Blocks Needed: 4
+  Index Block: 0
+  Data Blocks: 7 13 33 22 
+  Status: FULLY ALLOCATED
+
+
+===== MENU =====
+1. Contiguous Allocation
+2. Linked Allocation
+3. Single Indexed Allocation
+4. Display Free Block List
+5. Reset Free Blocks
+6. Exit
+Enter your choice: 4
+
+Free Block List:
+1 2 3 4 5 6 9 10 11 12 14 15 16 17 18 19 20 23 24 25 26 27 31 32 34 35 36 37 38 40 41 42 43 45 46 47 48 49 
+
+===== MENU =====
+1. Contiguous Allocation
+2. Linked Allocation
+3. Single Indexed Allocation
+4. Display Free Block List
+5. Reset Free Blocks
+6. Exit
+Enter your choice: 5
+
+Free block list reset completely.
+
+===== MENU =====
+1. Contiguous Allocation
+2. Linked Allocation
+3. Single Indexed Allocation
+4. Display Free Block List
+5. Reset Free Blocks
+6. Exit
+Enter your choice: 6
+
+Program Ended.
+
+[24bcs045@mepcolinux ex10]$exit
+exit
+
