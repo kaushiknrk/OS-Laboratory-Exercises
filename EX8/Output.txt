@@ -1,0 +1,96 @@
+Enter total physical memory size (in bytes): 1000
+Enter process size (in bytes): 400
+Enter page size (in bytes): 150
+
+Enter frame number for each page:
+Page 0 -> Frame: 2
+Page 1 -> Frame: 5
+Page 2 -> Frame: 2
+Error: Frame 2 is already allocated to Page 0! Choose another frame.
+Page 2 -> Frame: 3
+
+PAGING TECHNIQUE
+1. Display Page Table
+2. Display Number of Pages
+3. Display Internal Fragmentation
+4. Logical to Physical Address Translation
+5. Display All Details
+6. Display Frame List
+7. Exit
+Choose an option: 1
+
+PAGE TABLE
+Page No         Frame No
+0               2
+1               5
+2               3
+
+Do you want to continue? (y/n): y
+
+PAGING TECHNIQUE
+1. Display Page Table
+2. Display Number of Pages
+3. Display Internal Fragmentation
+4. Logical to Physical Address Translation
+5. Display All Details
+6. Display Frame List
+7. Exit
+Choose an option: 2
+
+Total pages required: 3
+Total frames in memory: 6
+
+Do you want to continue? (y/n): y
+
+PAGING TECHNIQUE
+1. Display Page Table
+2. Display Number of Pages
+3. Display Internal Fragmentation
+4. Logical to Physical Address Translation
+5. Display All Details
+6. Display Frame List
+7. Exit
+Choose an option: 3
+
+Total memory allocated: 450 bytes (3 pages x 150 bytes)
+Actual process size: 400 bytes
+Internal Fragmentation: 50 bytes
+Wasted space in last page: 50 out of 150 bytes
+
+Do you want to continue? (y/n): y
+
+PAGING TECHNIQUE
+1. Display Page Table
+2. Display Number of Pages
+3. Display Internal Fragmentation
+4. Logical to Physical Address Translation
+5. Display All Details
+6. Display Frame List
+7. Exit
+Choose an option: 4
+
+Enter logical address: 512
+Invalid logical address! Must be between 0 and 449
+
+Do you want to continue? (y/n): y
+
+PAGING TECHNIQUE
+1. Display Page Table
+2. Display Number of Pages
+3. Display Internal Fragmentation
+4. Logical to Physical Address Translation
+5. Display All Details
+6. Display Frame List
+7. Exit
+Choose an option: 4
+
+Enter logical address: 300
+
+ADDRESS TRANSLATION
+Logical Address  : 300
+Page Number      : 2
+Offset           : 0
+Frame Number     : 3 (from page table)
+Physical Address : 3 x 150 + 0 = 450
+
+Do you want to continue? (y/n):n
