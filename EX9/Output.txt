@@ -1,0 +1,169 @@
+Enter number of frames: 3
+Enter number of pages: 10
+Enter the page reference string:
+Page 1: 7
+Page 2: 0
+Page 3: 1
+Page 4: 0
+Page 5: 2
+Page 6: 0
+Page 7: 3
+Page 8: 0
+Page 9: 4
+Page 10: 2
+
+PAGE REPLACEMENT ALGORITHMS
+1. FIFO (First In First Out)
+2. LRU (Least Recently Used)
+3. Optimal
+4. Compare All
+5. Exit
+Choose an option: 1
+
+FIFO PAGE REPLACEMENT
+
+Page    Frames                  Status
+7        7  -  -        Fault
+0        7  0  -        Fault
+1        7  0  1        Fault
+0        7  0  1        Hit
+2        2  0  1        Fault
+0        2  0  1        Hit
+3        2  3  1        Fault
+0        2  3  0        Fault
+4        4  3  0        Fault
+2        4  2  0        Fault
+
+Total Page Faults : 8
+Total Page Hits   : 2
+Hit Ratio         : 20.00%
+Fault Ratio       : 80.00%
+
+Do you want to try another method? (y/n): y
+
+PAGE REPLACEMENT ALGORITHMS
+1. FIFO (First In First Out)
+2. LRU (Least Recently Used)
+3. Optimal
+4. Compare All
+5. Exit
+Choose an option: 2
+
+LRU PAGE REPLACEMENT
+
+Page    Frames                  Status
+7        7  -  -        Fault
+0        7  0  -        Fault
+1        7  0  1        Fault
+0        7  0  1        Hit
+2        2  0  1        Fault
+0        2  0  1        Hit
+3        2  0  3        Fault
+0        2  0  3        Hit
+4        4  0  3        Fault
+2        4  0  2        Fault
+
+Total Page Faults : 7
+Total Page Hits   : 3
+Hit Ratio         : 30.00%
+Fault Ratio       : 70.00%
+
+Do you want to try another method? (y/n): y
+
+PAGE REPLACEMENT ALGORITHMS
+1. FIFO (First In First Out)
+2. LRU (Least Recently Used)
+3. Optimal
+4. Compare All
+5. Exit
+Choose an option: 3
+
+OPTIMAL PAGE REPLACEMENT
+
+Page    Frames                  Status
+7        7  -  -        Fault
+0        7  0  -        Fault
+1        7  0  1        Fault
+0        7  0  1        Hit
+2        2  0  1        Fault
+0        2  0  1        Hit
+3        2  0  3        Fault
+0        2  0  3        Hit
+4        2  4  3        Fault
+2        2  4  3        Hit
+
+Total Page Faults : 6
+Total Page Hits   : 4
+Hit Ratio         : 40.00%
+Fault Ratio       : 60.00%
+
+Do you want to try another method? (y/n): y
+
+PAGE REPLACEMENT ALGORITHMS
+1. FIFO (First In First Out)
+2. LRU (Least Recently Used)
+3. Optimal
+4. Compare All
+5. Exit
+Choose an option: 4
+
+FIFO PAGE REPLACEMENT
+
+Page    Frames                  Status
+7        7  -  -        Fault
+0        7  0  -        Fault
+1        7  0  1        Fault
+0        7  0  1        Hit
+2        2  0  1        Fault
+0        2  0  1        Hit
+3        2  3  1        Fault
+0        2  3  0        Fault
+4        4  3  0        Fault
+2        4  2  0        Fault
+
+Total Page Faults : 8
+Total Page Hits   : 2
+Hit Ratio         : 20.00%
+Fault Ratio       : 80.00%
+
+
+LRU PAGE REPLACEMENT
+
+Page    Frames                  Status
+7        7  -  -        Fault
+0        7  0  -        Fault
+1        7  0  1        Fault
+0        7  0  1        Hit
+2        2  0  1        Fault
+0        2  0  1        Hit
+3        2  0  3        Fault
+0        2  0  3        Hit
+4        4  0  3        Fault
+2        4  0  2        Fault
+
+Total Page Faults : 7
+Total Page Hits   : 3
+Hit Ratio         : 30.00%
+Fault Ratio       : 70.00%
+
+
+OPTIMAL PAGE REPLACEMENT
+
+Page    Frames                  Status
+7        7  -  -        Fault
+0        7  0  -        Fault
+1        7  0  1        Fault
+0        7  0  1        Hit
+2        2  0  1        Fault
+0        2  0  1        Hit
+3        2  0  3        Fault
+0        2  0  3        Hit
+4        2  4  3        Fault
+2        2  4  3        Hit
+
+Total Page Faults : 6
+Total Page Hits   : 4
+Hit Ratio         : 40.00%
+Fault Ratio       : 60.00%
+
+Do you want to try another method? (y/n): n
