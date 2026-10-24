@@ -1,0 +1,140 @@
+=========================================
+         DISK SCHEDULING INPUTS
+=========================================
+Enter number of requests : 8
+Enter disk requests     : ^Z
+[1]+  Stopped                 ./diskmo
+[24bcs045@mepcolinux ex11n]$./diskmo
+=========================================
+         DISK SCHEDULING INPUTS
+=========================================
+Enter number of requests : 3
+Enter disk requests     : 45
+54
+67
+Enter initial head pos   : 62
+Enter previous head pos  : 45
+Enter disk size          : 90
+
+=========================================
+       DISK SCHEDULING ALGORITHMS
+=========================================
+ [1] FCFS    [2] SSTF    [3] SCAN
+ [4] C-SCAN  [5] LOOK    [6] C-LOOK
+ [7] Exit
+-----------------------------------------
+Enter choice: 1
+
+-----------------------------------------
+                 RESULTS
+-----------------------------------------
+Seek Sequence:
+ [62] ➔ [45] ➔ [54] ➔ [67]
+
+Total Head Movement : 39 cylinders
+=========================================
+
+=========================================
+       DISK SCHEDULING ALGORITHMS
+=========================================
+ [1] FCFS    [2] SSTF    [3] SCAN
+ [4] C-SCAN  [5] LOOK    [6] C-LOOK
+ [7] Exit
+-----------------------------------------
+Enter choice: 2
+
+-----------------------------------------
+                 RESULTS
+-----------------------------------------
+Seek Sequence:
+ [62] ➔ [67] ➔ [54] ➔ [45]
+
+Total Head Movement : 27 cylinders
+=========================================
+
+=========================================
+       DISK SCHEDULING ALGORITHMS
+=========================================
+ [1] FCFS    [2] SSTF    [3] SCAN
+ [4] C-SCAN  [5] LOOK    [6] C-LOOK
+ [7] Exit
+-----------------------------------------
+Enter choice: 3
+>> Calculated Direction: High/Right (Since Head >= Prev Head)
+
+-----------------------------------------
+                 RESULTS
+-----------------------------------------
+Seek Sequence:
+ [62] ➔ [67] ➔ [89] ➔ [54] ➔ [45]
+
+Total Head Movement : 71 cylinders
+=========================================
+
+=========================================
+       DISK SCHEDULING ALGORITHMS
+=========================================
+ [1] FCFS    [2] SSTF    [3] SCAN
+ [4] C-SCAN  [5] LOOK    [6] C-LOOK
+ [7] Exit
+-----------------------------------------
+Enter choice: 4
+>> Calculated Direction: High/Right (Since Head >= Prev Head)
+
+-----------------------------------------
+                 RESULTS
+-----------------------------------------
+Seek Sequence:
+ [62] ➔ [67] ➔ [89] ➔ [0] ➔ [45] ➔ [54]
+
+Total Head Movement : 170 cylinders
+=========================================
+
+=========================================
+       DISK SCHEDULING ALGORITHMS
+=========================================
+ [1] FCFS    [2] SSTF    [3] SCAN
+ [4] C-SCAN  [5] LOOK    [6] C-LOOK
+ [7] Exit
+-----------------------------------------
+Enter choice: 5
+>> Calculated Direction: High/Right (Since Head >= Prev Head)
+
+-----------------------------------------
+                 RESULTS
+-----------------------------------------
+Seek Sequence:
+ [62] ➔ [67] ➔ [54] ➔ [45]
+
+Total Head Movement : 27 cylinders
+=========================================
+
+=========================================
+       DISK SCHEDULING ALGORITHMS
+=========================================
+ [1] FCFS    [2] SSTF    [3] SCAN
+ [4] C-SCAN  [5] LOOK    [6] C-LOOK
+ [7] Exit
+-----------------------------------------
+Enter choice: 6
+>> Calculated Direction: High/Right (Since Head >= Prev Head)
+
+-----------------------------------------
+                 RESULTS
+-----------------------------------------
+Seek Sequence:
+ [62] ➔ [67] ➔ [45] ➔ [54]
+
+Total Head Movement : 36 cylinders
+=========================================
+
+=========================================
+       DISK SCHEDULING ALGORITHMS
+=========================================
+ [1] FCFS    [2] SSTF    [3] SCAN
+ [4] C-SCAN  [5] LOOK    [6] C-LOOK
+ [7] Exit
+-----------------------------------------
+Enter choice: 7
+
+>> Program terminated. Goodbye!
